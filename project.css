@@ -1,0 +1,135 @@
+/* Unique abstract background design */
+body {
+  background: radial-gradient(circle at 20% 20%, #fff8f0, #fef6e4, #ffe5d9);
+  background-attachment: fixed;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body::before,
+body::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+body::before {
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  top: -100px;
+  left: -100px;
+}
+
+body::after {
+  width: 500px;
+  height: 500px;
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  bottom: -150px;
+  right: -150px;
+}
+
+
+
+  .card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    transition: transform 0.3s ease;
+  }
+
+  .card:hover {
+    transform: scale(1.01);
+  }
+
+  .card-header {
+    border-bottom: none;
+    border-radius: 15px 15px 0 0;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  label.form-label {
+    font-weight: 600;
+  }
+
+  input.form-control,
+  select.form-select,
+  textarea.form-control {
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    transition: all 0.3s ease;
+  }
+
+  input:focus,
+  select:focus,
+  textarea:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.15rem rgba(13, 110, 253, 0.25);
+  }
+
+  .btn {
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  .btn-secondary {
+    background-color: #6c757d;
+    border: none;
+  }
+
+  .btn-secondary:hover {
+    background-color: #5a6268;
+    transform: scale(1.05);
+  }
+
+  .btn-success {
+    background-color: #28a745;
+    border: none;
+  }
+
+  .btn-success:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+  }
+
+  .list-group-item {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 6px;
+  }
+
+  .list-group-item:hover {
+    background-color: #f8f9fa;
+    transform: translateX(5px);
+  }
+
+  .nav-link {
+    transition: color 0.3s ease;
+  }
+
+  .nav-link:hover {
+    color: #ffc107;
+  }
+
+  h4, h5 {
+    color: #000; 
+    text-shadow: 1px 1px 2px #000000;
+  }
+
+  @media (max-width: 576px) {
+    .container {
+      padding: 15px;
+    }
+
+    h4, h5 {
+      font-size: 1.2rem;
+    }
+  }
+
+  
